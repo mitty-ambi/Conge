@@ -1,14 +1,18 @@
 <?php
 namespace App\Controllers;
-use App\Models\UserModel;
+use App\Models\Utilisateur;
 
 class UtilisateurController extends BaseController
 {
-    protected $userModel;
+    protected $utilisateur;
 
     public function __construct()
     {
-        $this->userModel = new UserModel();
+        $this->utilisateur = new Utilisateur();
+    }
+    public function go_to_login()
+    {
+        return view("login");
     }
 
 }
