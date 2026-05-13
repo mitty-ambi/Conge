@@ -42,7 +42,7 @@ class UtilisateurController extends BaseController
                     return redirect()->to('/admin/dashboard');
                     break;
                 case 'responsable rh':
-                    return redirect()->to('/rh/dashboard');
+                    return redirect()->to('/demande');
                     break;
                 default:
                     return redirect()->to('/employe/dashboard');
