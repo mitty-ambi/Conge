@@ -24,6 +24,8 @@ CREATE TABLE DemandeConge(
     id_demande INTEGER PRIMARY KEY AUTOINCREMENT,
     id_user INTEGER,
     id_type INTEGER,
+    date_debut DATE,
+    date_fin DATE,
     FOREIGN KEY (id_user) REFERENCES Utilisateur(id_user),
     FOREIGN KEY (id_type) REFERENCES Type(id_type)
 );
