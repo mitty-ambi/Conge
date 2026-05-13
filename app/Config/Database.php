@@ -26,7 +26,7 @@ class Database extends Config
      */
     public array $default = [
         'DSN' => '',
-        'database' => WRITEPATH . 'Conge1.db',  // SQLite database file path
+        'database' => ROOTPATH . 'Conge.db',  // SQLite database file path
         'DBDriver' => 'SQLite3',
         'DBPrefix' => '',
         'pConnect' => false,

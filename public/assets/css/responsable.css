@@ -1,0 +1,111 @@
+/* Styles inspirés du template "Espace responsable" */
+:root{
+  --ink:#1c2b1e;
+  --forest:#2d5a3d;
+  --forest2:#3d7a52;
+  --leaf:#5fa876;
+  --mint:#d4ede0;
+  --cream:#f8f6f1;
+  --white:#ffffff;
+  --border:#dde8e1;
+  --muted:#7a8f80;
+  --danger:#c0392b;
+  --danger-bg:#fdf0ee;
+  --danger-br:#f0b8b2;
+  --warn:#b8750a;
+  --warn-bg:#fef9ee;
+  --warn-br:#f5d98a;
+  --success:#1e6b3f;
+  --success-bg:#edf7f2;
+  --success-br:#8fd4aa;
+  --sidebar-w:240px;
+  --topbar-h:62px;
+}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Noto Sans",sans-serif;font-size:15px}
+
+.app-wrap{display:flex;min-height:100vh}
+
+/* Sidebar */
+.sidebar{width:var(--sidebar-w);background:var(--ink);display:flex;flex-direction:column;flex-shrink:0;position:sticky;top:0;height:100vh;overflow-y:auto}
+.sidebar-brand{padding:1.4rem 1.2rem 1rem;display:flex;align-items:center;gap:10px;border-bottom:1px solid rgba(255,255,255,.06)}
+.sidebar-logo-icon{width:34px;height:34px;background:var(--forest);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--white);font-weight:700;font-size:.85rem}
+.sidebar-brand-name{font-size:1rem;color:var(--white);line-height:1.2;font-weight:650}
+.sidebar-brand-name span{display:block;font-size:.65rem;font-weight:400;color:rgba(255,255,255,.35);letter-spacing:.05em;text-transform:uppercase;margin-top:2px}
+.sidebar-section{padding:.75rem 1.1rem .3rem;font-size:.62rem;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;color:rgba(255,255,255,.25);margin-top:.25rem}
+.sidebar-nav{list-style:none;padding:0 .75rem;margin:0}
+.sidebar-nav li{margin-bottom:2px}
+.sidebar-nav li a{display:flex;align-items:center;gap:9px;padding:9px 11px;border-radius:7px;color:rgba(255,255,255,.55);text-decoration:none;font-size:.85rem;font-weight:450;transition:all .15s}
+.sidebar-nav li a:hover{background:rgba(255,255,255,.06);color:rgba(255,255,255,.9)}
+.sidebar-nav li a.active{background:var(--forest);color:var(--white)}
+.sidebar-user{padding:.85rem .75rem;border-top:1px solid rgba(255,255,255,.06);margin-top:auto}
+.s-user-row{display:flex;align-items:center;gap:9px;padding:9px 11px;border-radius:7px;color:rgba(255,255,255,.75)}
+.avatar{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:650;color:var(--white);flex-shrink:0}
+.av-blue{background:#1a4f7a}
+.user-name{font-size:.825rem;font-weight:600;color:var(--white);line-height:1.2}
+.user-role{font-size:.65rem;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:.06em}
+
+/* Main */
+.main{flex:1;min-width:0;display:flex;flex-direction:column}
+.topbar{height:var(--topbar-h);background:var(--white);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 1.75rem;gap:1rem;position:sticky;top:0;z-index:10}
+.topbar-title{font-size:1.05rem;font-weight:700;color:var(--ink)}
+.topbar-breadcrumb{font-size:.78rem;color:var(--muted);display:flex;align-items:center;gap:5px}
+.topbar-breadcrumb a{color:var(--muted);text-decoration:none}
+.topbar-breadcrumb a:hover{color:var(--forest)}
+.content{padding:1.75rem;flex:1}
+
+/* Form controls */
+.f-select{border:1.5px solid var(--border);border-radius:8px;padding:10px 12px;font-size:.875rem;background:var(--white);color:var(--ink);cursor:pointer}
+.f-select:focus{border-color:var(--forest);outline:none;box-shadow:0 0 0 3px rgba(45,90,61,.1)}
+
+/* Card + table */
+.data-card{background:var(--white);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-top:1rem}
+.data-card-head{padding:.9rem 1.25rem;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:.75rem;flex-wrap:wrap}
+.data-card-head h3{font-size:.95rem;margin:0;font-weight:700;color:var(--ink)}
+.tbl{width:100%;border-collapse:collapse;font-size:.85rem}
+.tbl thead th{padding:9px 14px;font-size:.68rem;font-weight:650;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);background:var(--cream);border-bottom:1px solid var(--border);text-align:left;white-space:nowrap}
+.tbl tbody tr{border-bottom:1px solid var(--border);transition:background .1s}
+.tbl tbody tr:hover{background:var(--cream)}
+.tbl td{padding:12px 14px;vertical-align:middle}
+
+/* Small typography helpers (template parity) */
+.td-muted{color:var(--muted)}
+.td-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}
+
+/* Employee cell (template parity) */
+.profile-row{display:flex;align-items:center;gap:10px}
+.profile-info{min-width:0}
+.pname{font-weight:650;color:var(--ink);font-size:.86rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pdept{font-size:.72rem;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* Type badge (template parity) */
+.type-badge{display:inline-flex;align-items:center;padding:4px 10px;border-radius:999px;font-size:.72rem;font-weight:650;border:1px solid var(--border);background:var(--cream);color:var(--ink);white-space:nowrap}
+.t-annuel{background:rgba(45,90,61,.08);border-color:rgba(45,90,61,.18);color:var(--forest)}
+.t-maladie{background:rgba(184,117,10,.10);border-color:rgba(184,117,10,.22);color:var(--warn)}
+.t-sans-solde{background:rgba(122,143,128,.10);border-color:rgba(122,143,128,.22);color:var(--muted)}
+
+/* Status badges */
+.statut{display:inline-flex;align-items:center;gap:5px;font-size:.7rem;font-weight:650;padding:4px 9px;border-radius:12px}
+.statut::before{content:'';width:5px;height:5px;border-radius:50%;display:inline-block;flex-shrink:0}
+.s-attente{background:var(--warn-bg);color:var(--warn)}
+.s-attente::before{background:var(--warn)}
+.s-approuvee{background:var(--success-bg);color:var(--success)}
+.s-approuvee::before{background:var(--success)}
+.s-refusee{background:var(--danger-bg);color:var(--danger)}
+.s-refusee::before{background:var(--danger)}
+
+/* Action buttons */
+.action-btns{display:flex;gap:6px;flex-wrap:wrap}
+.btn-sm{font-size:.72rem;font-weight:650;padding:5px 10px;border-radius:6px;border:1px solid transparent;cursor:pointer;transition:all .15s;display:inline-flex;align-items:center;gap:4px;background:transparent}
+.btn-approve{background:var(--success-bg);color:var(--success);border-color:var(--success-br)}
+.btn-approve:hover{background:#d5f0e3}
+.btn-refuse{background:var(--danger-bg);color:var(--danger);border-color:var(--danger-br)}
+.btn-refuse:hover{background:#f8dbd8}
+
+/* Responsive */
+@media (max-width: 900px){
+  .sidebar{display:none}
+  .topbar{padding:0 1rem}
+  .content{padding:1rem}
+}

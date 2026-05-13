@@ -4,7 +4,8 @@
     class SoldeModel extends Model{
         protected $table = 'Solde';
         protected $primaryKey = 'id_solde';
-        protected $fillable = ['valeur','id_user', 'id_type'];
+        protected $allowedFields = ['valeur', 'id_user', 'id_type'];
+        protected $useTimestamps = false;
 
         public function getSoldeByUserIdByType($id_user, $id_type)
         {

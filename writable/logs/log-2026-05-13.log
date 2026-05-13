@@ -1,0 +1,226 @@
+ERROR - 2026-05-13 07:13:24 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/pc/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/pc/Documents/GitHub/Conge/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/pc/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/pc/Documents/GitHub/Conge/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/pc/Documents/GitHub/Conge/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pc/Documents/GitHub/Conge/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/pc/Documents/GitHub/Conge/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/pc/Documents/GitHub/Conge/app/Models/Statut.php(11): CodeIgniter\BaseModel->findAll()
+#7 /home/pc/Documents/GitHub/Conge/app/Controllers/DemandeController.php(9): App\Models\Statut->getAllStatuts()
+#8 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(951): App\Controllers\DemandeController->index()
+#9 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/pc/Documents/GitHub/Conge/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/pc/Documents/GitHub/Conge/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/pc/Documents/GitHub/Conge/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 {main}
+CRITICAL - 2026-05-13 07:13:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+[Method: GET, Route: demande]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Models/Statut.php(11): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH/Controllers/DemandeController.php(9): App\Models\Statut->getAllStatuts()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeController->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ERROR - 2026-05-13 07:15:26 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/pc/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/pc/Documents/GitHub/Conge/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/pc/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/pc/Documents/GitHub/Conge/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/pc/Documents/GitHub/Conge/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pc/Documents/GitHub/Conge/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/pc/Documents/GitHub/Conge/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/pc/Documents/GitHub/Conge/app/Models/Statut.php(11): CodeIgniter\BaseModel->findAll()
+#7 /home/pc/Documents/GitHub/Conge/app/Controllers/DemandeController.php(9): App\Models\Statut->getAllStatuts()
+#8 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(951): App\Controllers\DemandeController->index()
+#9 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/pc/Documents/GitHub/Conge/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/pc/Documents/GitHub/Conge/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/pc/Documents/GitHub/Conge/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 {main}
+CRITICAL - 2026-05-13 07:15:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+[Method: GET, Route: demande]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Models/Statut.php(11): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH/Controllers/DemandeController.php(9): App\Models\Statut->getAllStatuts()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeController->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ERROR - 2026-05-13 07:18:33 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/pc/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/pc/Documents/GitHub/Conge/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/pc/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/pc/Documents/GitHub/Conge/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/pc/Documents/GitHub/Conge/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pc/Documents/GitHub/Conge/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/pc/Documents/GitHub/Conge/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/pc/Documents/GitHub/Conge/app/Models/Statut.php(11): CodeIgniter\BaseModel->findAll()
+#7 /home/pc/Documents/GitHub/Conge/app/Controllers/DemandeController.php(9): App\Models\Statut->getAllStatuts()
+#8 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(951): App\Controllers\DemandeController->index()
+#9 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/pc/Documents/GitHub/Conge/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/pc/Documents/GitHub/Conge/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/pc/Documents/GitHub/Conge/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 {main}
+CRITICAL - 2026-05-13 07:18:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+[Method: GET, Route: demande]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Models/Statut.php(11): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH/Controllers/DemandeController.php(9): App\Models\Statut->getAllStatuts()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeController->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ERROR - 2026-05-13 07:20:31 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/pc/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/pc/Documents/GitHub/Conge/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/pc/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/pc/Documents/GitHub/Conge/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/pc/Documents/GitHub/Conge/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pc/Documents/GitHub/Conge/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/pc/Documents/GitHub/Conge/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/pc/Documents/GitHub/Conge/app/Models/Statut.php(11): CodeIgniter\BaseModel->findAll()
+#7 /home/pc/Documents/GitHub/Conge/app/Controllers/DemandeController.php(9): App\Models\Statut->getAllStatuts()
+#8 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(951): App\Controllers\DemandeController->index()
+#9 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/pc/Documents/GitHub/Conge/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/pc/Documents/GitHub/Conge/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/pc/Documents/GitHub/Conge/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 {main}
+CRITICAL - 2026-05-13 07:20:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+[Method: GET, Route: demande]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Models/Statut.php(11): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH/Controllers/DemandeController.php(9): App\Models\Statut->getAllStatuts()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeController->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ERROR - 2026-05-13 07:20:40 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/pc/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/pc/Documents/GitHub/Conge/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/pc/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/pc/Documents/GitHub/Conge/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/pc/Documents/GitHub/Conge/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/pc/Documents/GitHub/Conge/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/pc/Documents/GitHub/Conge/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/pc/Documents/GitHub/Conge/app/Models/Statut.php(11): CodeIgniter\BaseModel->findAll()
+#7 /home/pc/Documents/GitHub/Conge/app/Controllers/DemandeController.php(9): App\Models\Statut->getAllStatuts()
+#8 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(951): App\Controllers\DemandeController->index()
+#9 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/pc/Documents/GitHub/Conge/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/pc/Documents/GitHub/Conge/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/pc/Documents/GitHub/Conge/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 {main}
+CRITICAL - 2026-05-13 07:20:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+[Method: GET, Route: demande]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Models/Statut.php(11): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH/Controllers/DemandeController.php(9): App\Models\Statut->getAllStatuts()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeController->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:31:36 --> ErrorException: Undefined variable $departements
+[Method: GET, Route: demande]
+in APPPATH/Views/demande/index.php on line 19.
+ 1 APPPATH/Views/demande/index.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/pc/Documents/GitHub/Conge/app/Views/demande/index.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeController.php(19): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:34:30 --> ErrorException: Trying to access array offset on null
+[Method: GET, Route: demande]
+in APPPATH/Views/demande/index.php on line 50.
+ 1 APPPATH/Views/demande/index.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/pc/Documents/GitHub/Conge/app/Views/demande/index.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeController.php(25): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:34:31 --> ErrorException: Trying to access array offset on null
+[Method: GET, Route: demande]
+in APPPATH/Views/demande/index.php on line 50.
+ 1 APPPATH/Views/demande/index.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/pc/Documents/GitHub/Conge/app/Views/demande/index.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeController.php(25): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:34:36 --> ErrorException: Trying to access array offset on null
+[Method: GET, Route: demande]
+in APPPATH/Views/demande/index.php on line 50.
+ 1 APPPATH/Views/demande/index.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/pc/Documents/GitHub/Conge/app/Views/demande/index.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeController.php(25): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
