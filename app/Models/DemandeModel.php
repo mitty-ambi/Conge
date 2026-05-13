@@ -14,14 +14,14 @@ class DemandeModel extends Model
     public function getDemandeByStatut($id_statut)
     {
         return $this->join('DemandeStatut', 'DemandeConge.id_demande = DemandeStatut.id_demande')
-                    ->where('DemandeStatut.id_statut', $id_statut)
-                    ->findAll();
+            ->where('DemandeStatut.id_statut', $id_statut)
+            ->findAll();
     }
     public function getDemandeByDepartement($id_departement)
     {
         return $this->join('Utilisateur', 'DemandeConge.id = Utilisateur.id_user')
-                    ->where('Utilisateur.id_departement', $id_departement)
-                    ->findAll();
+            ->where('Utilisateur.id_departement', $id_departement)
+            ->findAll();
     }
     public function modifyStatut($id_demande, $id_statut)
     {
@@ -35,8 +35,8 @@ class DemandeModel extends Model
     public function getNombresDemandesByStatut($id_statut)
     {
         return $this->join('DemandeStatut', 'DemandeConge.id_demande = DemandeStatut.id_demande')
-                    ->where('DemandeStatut.id_statut', $id_statut)
-                    ->countAllResults();
+            ->where('DemandeStatut.id_statut', $id_statut)
+            ->countAllResults();
     }
     public function getDureeDemande($id_demande)
     {
@@ -47,6 +47,25 @@ class DemandeModel extends Model
             return $date_debut->diff($date_fin)->days + 1;
         }
         return null;
+    }
+
+    public function getDemandesEmploye($id_user)
+    {
+        $demandes = $this
+            ->select('DemandeConge.*, DemandeStatus.id_status as statut, Type.nom as type_conge')
+            ->join('DemandeStatus', 'DemandeConge.id_demande = DemandeStatus.id_demande', 'left')
+            ->join('Type', 'DemandeConge.id_type = Type.id_type', 'left')
+            ->where('DemandeConge.id_user', $id_user)
+            ->findAll();
+
+        // Ajouter la durée calculée
+        foreach ($demandes as &$d) {
+            $debut = new \DateTime($d['date_debut']);
+            $fin = new \DateTime($d['date_fin']);
+            $d['duree'] = $debut->diff($fin)->days + 1;
+        }
+
+        return $demandes;
     }
 
     public function getStatutByDemandeId($id_demande)

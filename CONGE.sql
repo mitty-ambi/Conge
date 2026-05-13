@@ -38,6 +38,8 @@ CREATE TABLE DemandeConge(
     FOREIGN KEY (id_type) REFERENCES Type(id_type)
 );
 
+ALTER TABLE DemandeConge ADD motif VARCHAR(100)
+
 CREATE TABLE Status(
     id_status INTEGER PRIMARY KEY AUTOINCREMENT,
     nom VARCHAR(50)

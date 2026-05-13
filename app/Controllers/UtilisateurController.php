@@ -1,6 +1,7 @@
 <?php
 namespace App\Controllers;
 use App\Models\Utilisateur;
+use App\Models\DemandeModel;
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
@@ -80,7 +81,25 @@ class UtilisateurController extends BaseController
         if (!session()->get('logged_in')) {
             return redirect()->to('/login');
         }
-        return view('employe/dashboard');
+
+        $id_user = session()->get('id_user');
+        $demandeModel = new DemandeModel();
+
+        $demandes = $demandeModel->getDemandesEmploye($id_user);
+
+        // Compter par statut (1=en attente, 2=approuvée, 3=refusée)
+        $en_attente = count(array_filter($demandes, fn($d) => ($d['statut'] ?? 1) == 1));
+        $approuvees = count(array_filter($demandes, fn($d) => ($d['statut'] ?? 1) == 2));
+        $refusees = count(array_filter($demandes, fn($d) => ($d['statut'] ?? 1) == 3));
+
+        $data = [
+            'en_attente' => $en_attente,
+            'approuvees' => $approuvees,
+            'refusees' => $refusees,
+            'demandes' => array_slice($demandes, 0, 3)
+        ];
+
+        return view('employe/dashboard', $data);
     }
 
     public function admin_dashboard()
