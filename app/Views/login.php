@@ -9,7 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/login.css" />
+    <link rel="stylesheet" href="/assets/css/login.css" />
 </head>
 
 <body>
@@ -43,14 +43,14 @@
                             <i class="bi bi-person-check"></i>
                             <div>
                                 <div class="role-pill-name">Responsable RH</div>
-                                <div class="role-pill-cred">rh@techmada.mg · rh123</div>
+                                <div class="role-pill-cred">marie@techmada.mg · rh123</div>
                             </div>
                         </div>
                         <div class="role-pill">
                             <i class="bi bi-person"></i>
                             <div>
                                 <div class="role-pill-name">Employé</div>
-                                <div class="role-pill-cred">employe@techmada.mg · emp123</div>
+                                <div class="role-pill-cred">soa@techmada.mg · emp123</div>
                             </div>
                         </div>
                     </div>
@@ -62,21 +62,24 @@
                     <p class="auth-sub">Entrez vos identifiants pour accéder à votre espace.</p>
 
                     <!-- Flashdata CI4 — erreur -->
-                    <div class="flash flash-error">
-                        <i class="bi bi-exclamation-circle-fill"></i>
-                        Identifiants incorrects. Veuillez réessayer.
-                    </div>
+                    <?php if (session()->getFlashdata('error')): ?>
+                        <div class="flash flash-error">
+                            <i class="bi bi-exclamation-circle-fill"></i>
+                            <?= session()->getFlashdata('error') ?>
+                        </div>
+                    <?php endif; ?>
 
                     <form action="<?= base_url('auth/attemptLogin') ?>" method="POST">
+                        <?= csrf_field() ?>
                         <div class="f-group">
                             <label class="f-label">Adresse email</label>
                             <input type="email" name="email" class="f-input" placeholder="vous@techmada.mg"
-                                value="employe@techmada.mg" />
+                                value="<?= old('email', 'soa@techmada.mg') ?>" />
                         </div>
                         <div class="f-group">
                             <label class="f-label">Mot de passe</label>
                             <input type="password" name="password" class="f-input" placeholder="••••••••"
-                                value="emp123" />
+                                value="<?= old('password', 'emp123') ?>" />
                         </div>
                         <button type="submit" class="btn-primary" style="margin-top:.5rem">
                             Se connecter <i class="bi bi-arrow-right-short"></i>
