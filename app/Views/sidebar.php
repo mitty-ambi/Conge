@@ -13,12 +13,12 @@
     <div class="sidebar-section">Menu</div>
     <ul class="sidebar-nav">
         <li>
-            <a href="#" class="active">
+            <a href="/employe/dashboard" class="active">
                 <i class="bi bi-grid-1x2"></i> Tableau de bord
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="/employe/addDemande">
                 <i class="bi bi-plus-circle"></i> Nouvelle demande
             </a>
         </li>

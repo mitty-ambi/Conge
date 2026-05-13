@@ -28,14 +28,14 @@
                     <div class="metric-top">
                         <div class="metric-icon mi-amber"><i class="bi bi-hourglass-split"></i></div>
                     </div>
-                    <div class="metric-val">2</div>
+                    <div class="metric-val"><?= $en_attente ?? 0 ?></div>
                     <div class="metric-label">En attente</div>
                 </div>
                 <div class="metric">
                     <div class="metric-top">
                         <div class="metric-icon mi-green"><i class="bi bi-check-circle"></i></div>
                     </div>
-                    <div class="metric-val">5</div>
+                    <div class="metric-val"><?= $approuvees ?? 0 ?></div>
                     <div class="metric-label">Approuvées</div>
                 </div>
                 <div class="metric">
@@ -50,7 +50,7 @@
                     <div class="metric-top">
                         <div class="metric-icon mi-red"><i class="bi bi-x-circle"></i></div>
                     </div>
-                    <div class="metric-val">1</div>
+                    <div class="metric-val"><?= $refusees ?? 0 ?></div>
                     <div class="metric-label">Refusée</div>
                 </div>
             </div>
@@ -113,30 +113,28 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td><span class="type-badge t-annuel">Annuel</span></td>
-                            <td class="td-muted">16 juin 2025</td>
-                            <td class="td-muted">20 juin 2025</td>
-                            <td class="td-mono">5 j</td>
-                            <td><span class="statut s-attente">en attente</span></td>
-                            <td><button class="btn-sm btn-cancel"><i class="bi bi-x"></i> Annuler</button></td>
-                        </tr>
-                        <tr>
-                            <td><span class="type-badge t-maladie">Maladie</span></td>
-                            <td class="td-muted">2 juin 2025</td>
-                            <td class="td-muted">3 juin 2025</td>
-                            <td class="td-mono">2 j</td>
-                            <td><span class="statut s-approuvee">approuvée</span></td>
-                            <td><span class="td-muted">—</span></td>
-                        </tr>
-                        <tr>
-                            <td><span class="type-badge t-annuel">Annuel</span></td>
-                            <td class="td-muted">12 mai 2025</td>
-                            <td class="td-muted">16 mai 2025</td>
-                            <td class="td-mono">5 j</td>
-                            <td><span class="statut s-approuvee">approuvée</span></td>
-                            <td><span class="td-muted">—</span></td>
-                        </tr>
+                        <?php if (!empty($demandes)): ?>
+                            <?php foreach ($demandes as $d): ?>
+                                <tr>
+                                    <td><span class="type-badge t-annuel"><?= ucfirst($d['type_conge'] ?? 'Annuel') ?></span>
+                                    </td>
+                                    <td class="td-muted"><?= date('d M Y', strtotime($d['date_debut'])) ?></td>
+                                    <td class="td-muted"><?= date('d M Y', strtotime($d['date_fin'])) ?></td>
+                                    <td class="td-mono"><?= $d['duree'] ?? 1 ?> j</td>
+                                    <td><span
+                                            class="statut s-<?= ($d['statut'] == 1) ? 'attente' : (($d['statut'] == 2) ? 'approuvee' : 'refusee') ?>"><?= ($d['statut'] == 1) ? 'en attente' : (($d['statut'] == 2) ? 'approuvée' : 'refusée') ?></span>
+                                    </td>
+                                    <td><?php if ($d['statut'] == 1): ?><button class="btn-sm btn-cancel"><i
+                                                    class="bi bi-x"></i> Annuler</button><?php else: ?><span
+                                                class="td-muted">—</span><?php endif; ?></td>
+                                </tr>
+                            <?php endforeach; ?>
+                        <?php else: ?>
+                            <tr>
+                                <td colspan="6" style="text-align:center;padding:1rem;color:var(--muted)">Aucune demande
+                                </td>
+                            </tr>
+                        <?php endif; ?>
                     </tbody>
                 </table>
             </div>
