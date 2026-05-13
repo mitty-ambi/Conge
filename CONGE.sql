@@ -160,3 +160,17 @@ INSERT INTO DemandeDecision (id_demande, id_user) VALUES (4, 2);
 
 -- Demande 5 refusée par Marie
 INSERT INTO DemandeDecision (id_demande, id_user) VALUES (5, 2);
+insert into Departement (nom) values ('Informatique');
+insert into Departement (nom) values ('Ressources Humaines');
+insert into Departement (nom) values ('Comptabilité');
+
+insert into Type (nom) values ('Congé Annuel');
+insert into Type (nom) values ('Congé Maladie');
+insert into Type (nom) values ('Congé Sans Solde');
+
+insert into Utilisateur (Nom, Prenom, Role, id_departement) values ('Doe', 'John', 'employé', 1);
+insert into Utilisateur (Nom, Prenom, Role, id_departement) values ('Smith', 'Jane', 'responsable rh', 2);
+insert into Utilisateur (Nom, Prenom, Role, id_departement) values ('Admin', 'User', 'admin', 0);
+
+insert into DemandeConge (id_user, id_type, date_debut, date_fin) values (1, 1, '2024-07-01', '2024-07-10');
+insert into DemandeStatus (id_demande, id_status, date) values (1, 1, '2024-06-01');

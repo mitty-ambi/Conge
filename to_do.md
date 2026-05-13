@@ -12,10 +12,10 @@
             . actions
         * Refus inevitable(quota de conges insuffisant)
     .. Services : 
-        * GetAlldemandes(Demande)
-        * GetDemandeByStatut(Demande)
-        * GetDemandeByDepartement(Demande)
-        * GetSoldeUserByType(Solde)
-        * ModifierStatut(Demande)
-        * ModifierSolde(Solde)
-        * GetAgentDedecision(celui qui a approuve ou refuse la demande)(DemandeDecision)
+        * (ok)GetAlldemandes(Demande)
+        * (ok)GetDemandeByStatut(Demande)
+        * (ok)GetDemandeByDepartement(Demande)
+        * (ok)GetSoldeUserByType(Solde)
+        * (ok)ModifierStatut(Demande)
+        * (ok)ModifierSolde(Solde)
+        * (ok)GetAgentDedecision(celui qui a approuve ou refuse la demande)(DemandeDecision)
