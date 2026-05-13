@@ -5,3 +5,7 @@
     -creation table demandeConge
     -creation table status
     -creation table DemandeStatus
+# Page de login (login.php)
+    -fonction login
+    -fonction verifier
+    -redirection 

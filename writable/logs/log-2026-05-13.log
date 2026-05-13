@@ -1,226 +1,1317 @@
-ERROR - 2026-05-13 07:13:24 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/pc/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php:111
+ERROR - 2026-05-13 06:43:29 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/main/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php:111
 Stack trace:
-#0 /home/pc/Documents/GitHub/Conge/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#1 /home/pc/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#2 /home/pc/Documents/GitHub/Conge/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
-#3 /home/pc/Documents/GitHub/Conge/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
-#4 /home/pc/Documents/GitHub/Conge/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
-#5 /home/pc/Documents/GitHub/Conge/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
-#6 /home/pc/Documents/GitHub/Conge/app/Models/Statut.php(11): CodeIgniter\BaseModel->findAll()
-#7 /home/pc/Documents/GitHub/Conge/app/Controllers/DemandeController.php(9): App\Models\Statut->getAllStatuts()
-#8 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(951): App\Controllers\DemandeController->index()
-#9 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
-#10 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
-#11 /home/pc/Documents/GitHub/Conge/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
-#12 /home/pc/Documents/GitHub/Conge/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
-#13 /home/pc/Documents/GitHub/Conge/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#0 /home/main/Documents/GitHub/Conge/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/main/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/main/Documents/GitHub/Conge/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/main/Documents/GitHub/Conge/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/main/Documents/GitHub/Conge/system/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/main/Documents/GitHub/Conge/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /home/main/Documents/GitHub/Conge/app/Models/Utilisateur.php(14): CodeIgniter\BaseModel->first()
+#7 /home/main/Documents/GitHub/Conge/app/Controllers/UtilisateurController.php(25): App\Models\Utilisateur->logged_in()
+#8 /home/main/Documents/GitHub/Conge/system/CodeIgniter.php(951): App\Controllers\UtilisateurController->login()
+#9 /home/main/Documents/GitHub/Conge/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/main/Documents/GitHub/Conge/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/main/Documents/GitHub/Conge/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/main/Documents/GitHub/Conge/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/main/Documents/GitHub/Conge/public/index.php(59): CodeIgniter\Boot::bootWeb()
 #14 {main}
-CRITICAL - 2026-05-13 07:13:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+CRITICAL - 2026-05-13 06:43:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
 Main connection [SQLite3]: Class "SQLite3" not found
-[Method: GET, Route: demande]
+[Method: POST, Route: auth/attemptLogin]
 in SYSTEMPATH/Database/BaseConnection.php on line 606.
  1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
  2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
  3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
- 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
- 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
- 6 APPPATH/Models/Statut.php(11): CodeIgniter\BaseModel->findAll()
- 7 APPPATH/Controllers/DemandeController.php(9): App\Models\Statut->getAllStatuts()
- 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeController->index()
+ 4 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Models/Utilisateur.php(14): CodeIgniter\BaseModel->first()
+ 7 APPPATH/Controllers/UtilisateurController.php(25): App\Models\Utilisateur->logged_in()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UtilisateurController->login()
  9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
 11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
 12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
 13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
-ERROR - 2026-05-13 07:15:26 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/pc/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php:111
+ERROR - 2026-05-13 06:43:31 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/main/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php:111
 Stack trace:
-#0 /home/pc/Documents/GitHub/Conge/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#1 /home/pc/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#2 /home/pc/Documents/GitHub/Conge/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
-#3 /home/pc/Documents/GitHub/Conge/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
-#4 /home/pc/Documents/GitHub/Conge/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
-#5 /home/pc/Documents/GitHub/Conge/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
-#6 /home/pc/Documents/GitHub/Conge/app/Models/Statut.php(11): CodeIgniter\BaseModel->findAll()
-#7 /home/pc/Documents/GitHub/Conge/app/Controllers/DemandeController.php(9): App\Models\Statut->getAllStatuts()
-#8 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(951): App\Controllers\DemandeController->index()
-#9 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
-#10 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
-#11 /home/pc/Documents/GitHub/Conge/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
-#12 /home/pc/Documents/GitHub/Conge/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
-#13 /home/pc/Documents/GitHub/Conge/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#0 /home/main/Documents/GitHub/Conge/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/main/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/main/Documents/GitHub/Conge/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/main/Documents/GitHub/Conge/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/main/Documents/GitHub/Conge/system/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/main/Documents/GitHub/Conge/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /home/main/Documents/GitHub/Conge/app/Models/Utilisateur.php(14): CodeIgniter\BaseModel->first()
+#7 /home/main/Documents/GitHub/Conge/app/Controllers/UtilisateurController.php(25): App\Models\Utilisateur->logged_in()
+#8 /home/main/Documents/GitHub/Conge/system/CodeIgniter.php(951): App\Controllers\UtilisateurController->login()
+#9 /home/main/Documents/GitHub/Conge/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/main/Documents/GitHub/Conge/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/main/Documents/GitHub/Conge/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/main/Documents/GitHub/Conge/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/main/Documents/GitHub/Conge/public/index.php(59): CodeIgniter\Boot::bootWeb()
 #14 {main}
-CRITICAL - 2026-05-13 07:15:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+CRITICAL - 2026-05-13 06:43:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
 Main connection [SQLite3]: Class "SQLite3" not found
-[Method: GET, Route: demande]
+[Method: POST, Route: auth/attemptLogin]
 in SYSTEMPATH/Database/BaseConnection.php on line 606.
  1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
  2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
  3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
- 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
- 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
- 6 APPPATH/Models/Statut.php(11): CodeIgniter\BaseModel->findAll()
- 7 APPPATH/Controllers/DemandeController.php(9): App\Models\Statut->getAllStatuts()
- 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeController->index()
+ 4 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Models/Utilisateur.php(14): CodeIgniter\BaseModel->first()
+ 7 APPPATH/Controllers/UtilisateurController.php(25): App\Models\Utilisateur->logged_in()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UtilisateurController->login()
  9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
 11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
 12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
 13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
-ERROR - 2026-05-13 07:18:33 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/pc/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php:111
+ERROR - 2026-05-13 06:43:37 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/main/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php:111
 Stack trace:
-#0 /home/pc/Documents/GitHub/Conge/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#1 /home/pc/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#2 /home/pc/Documents/GitHub/Conge/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
-#3 /home/pc/Documents/GitHub/Conge/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
-#4 /home/pc/Documents/GitHub/Conge/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
-#5 /home/pc/Documents/GitHub/Conge/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
-#6 /home/pc/Documents/GitHub/Conge/app/Models/Statut.php(11): CodeIgniter\BaseModel->findAll()
-#7 /home/pc/Documents/GitHub/Conge/app/Controllers/DemandeController.php(9): App\Models\Statut->getAllStatuts()
-#8 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(951): App\Controllers\DemandeController->index()
-#9 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
-#10 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
-#11 /home/pc/Documents/GitHub/Conge/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
-#12 /home/pc/Documents/GitHub/Conge/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
-#13 /home/pc/Documents/GitHub/Conge/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#0 /home/main/Documents/GitHub/Conge/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/main/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/main/Documents/GitHub/Conge/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/main/Documents/GitHub/Conge/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/main/Documents/GitHub/Conge/system/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/main/Documents/GitHub/Conge/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /home/main/Documents/GitHub/Conge/app/Models/Utilisateur.php(14): CodeIgniter\BaseModel->first()
+#7 /home/main/Documents/GitHub/Conge/app/Controllers/UtilisateurController.php(25): App\Models\Utilisateur->logged_in()
+#8 /home/main/Documents/GitHub/Conge/system/CodeIgniter.php(951): App\Controllers\UtilisateurController->login()
+#9 /home/main/Documents/GitHub/Conge/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/main/Documents/GitHub/Conge/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/main/Documents/GitHub/Conge/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/main/Documents/GitHub/Conge/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/main/Documents/GitHub/Conge/public/index.php(59): CodeIgniter\Boot::bootWeb()
 #14 {main}
-CRITICAL - 2026-05-13 07:18:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+CRITICAL - 2026-05-13 06:43:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
 Main connection [SQLite3]: Class "SQLite3" not found
-[Method: GET, Route: demande]
+[Method: POST, Route: auth/attemptLogin]
 in SYSTEMPATH/Database/BaseConnection.php on line 606.
  1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
  2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
  3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
- 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
- 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
- 6 APPPATH/Models/Statut.php(11): CodeIgniter\BaseModel->findAll()
- 7 APPPATH/Controllers/DemandeController.php(9): App\Models\Statut->getAllStatuts()
- 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeController->index()
+ 4 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Models/Utilisateur.php(14): CodeIgniter\BaseModel->first()
+ 7 APPPATH/Controllers/UtilisateurController.php(25): App\Models\Utilisateur->logged_in()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UtilisateurController->login()
  9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
 11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
 12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
 13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
-ERROR - 2026-05-13 07:20:31 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/pc/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php:111
+ERROR - 2026-05-13 06:44:34 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/main/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php:111
 Stack trace:
-#0 /home/pc/Documents/GitHub/Conge/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#1 /home/pc/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#2 /home/pc/Documents/GitHub/Conge/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
-#3 /home/pc/Documents/GitHub/Conge/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
-#4 /home/pc/Documents/GitHub/Conge/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
-#5 /home/pc/Documents/GitHub/Conge/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
-#6 /home/pc/Documents/GitHub/Conge/app/Models/Statut.php(11): CodeIgniter\BaseModel->findAll()
-#7 /home/pc/Documents/GitHub/Conge/app/Controllers/DemandeController.php(9): App\Models\Statut->getAllStatuts()
-#8 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(951): App\Controllers\DemandeController->index()
-#9 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
-#10 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
-#11 /home/pc/Documents/GitHub/Conge/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
-#12 /home/pc/Documents/GitHub/Conge/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
-#13 /home/pc/Documents/GitHub/Conge/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#0 /home/main/Documents/GitHub/Conge/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/main/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/main/Documents/GitHub/Conge/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/main/Documents/GitHub/Conge/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/main/Documents/GitHub/Conge/system/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/main/Documents/GitHub/Conge/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /home/main/Documents/GitHub/Conge/app/Models/Utilisateur.php(14): CodeIgniter\BaseModel->first()
+#7 /home/main/Documents/GitHub/Conge/app/Controllers/UtilisateurController.php(27): App\Models\Utilisateur->logged_in()
+#8 /home/main/Documents/GitHub/Conge/system/CodeIgniter.php(951): App\Controllers\UtilisateurController->login()
+#9 /home/main/Documents/GitHub/Conge/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/main/Documents/GitHub/Conge/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/main/Documents/GitHub/Conge/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/main/Documents/GitHub/Conge/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/main/Documents/GitHub/Conge/public/index.php(59): CodeIgniter\Boot::bootWeb()
 #14 {main}
-CRITICAL - 2026-05-13 07:20:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+CRITICAL - 2026-05-13 06:44:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
 Main connection [SQLite3]: Class "SQLite3" not found
-[Method: GET, Route: demande]
+[Method: POST, Route: auth/attemptLogin]
 in SYSTEMPATH/Database/BaseConnection.php on line 606.
  1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
  2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
  3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
- 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
- 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
- 6 APPPATH/Models/Statut.php(11): CodeIgniter\BaseModel->findAll()
- 7 APPPATH/Controllers/DemandeController.php(9): App\Models\Statut->getAllStatuts()
- 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeController->index()
+ 4 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Models/Utilisateur.php(14): CodeIgniter\BaseModel->first()
+ 7 APPPATH/Controllers/UtilisateurController.php(27): App\Models\Utilisateur->logged_in()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UtilisateurController->login()
  9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
 11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
 12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
 13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
-ERROR - 2026-05-13 07:20:40 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/pc/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php:111
+ERROR - 2026-05-13 06:44:53 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/main/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php:111
 Stack trace:
-#0 /home/pc/Documents/GitHub/Conge/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
-#1 /home/pc/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
-#2 /home/pc/Documents/GitHub/Conge/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
-#3 /home/pc/Documents/GitHub/Conge/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
-#4 /home/pc/Documents/GitHub/Conge/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
-#5 /home/pc/Documents/GitHub/Conge/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
-#6 /home/pc/Documents/GitHub/Conge/app/Models/Statut.php(11): CodeIgniter\BaseModel->findAll()
-#7 /home/pc/Documents/GitHub/Conge/app/Controllers/DemandeController.php(9): App\Models\Statut->getAllStatuts()
-#8 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(951): App\Controllers\DemandeController->index()
-#9 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
-#10 /home/pc/Documents/GitHub/Conge/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
-#11 /home/pc/Documents/GitHub/Conge/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
-#12 /home/pc/Documents/GitHub/Conge/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
-#13 /home/pc/Documents/GitHub/Conge/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#0 /home/main/Documents/GitHub/Conge/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/main/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/main/Documents/GitHub/Conge/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/main/Documents/GitHub/Conge/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/main/Documents/GitHub/Conge/system/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/main/Documents/GitHub/Conge/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /home/main/Documents/GitHub/Conge/app/Models/Utilisateur.php(14): CodeIgniter\BaseModel->first()
+#7 /home/main/Documents/GitHub/Conge/app/Controllers/UtilisateurController.php(27): App\Models\Utilisateur->logged_in()
+#8 /home/main/Documents/GitHub/Conge/system/CodeIgniter.php(951): App\Controllers\UtilisateurController->login()
+#9 /home/main/Documents/GitHub/Conge/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/main/Documents/GitHub/Conge/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/main/Documents/GitHub/Conge/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/main/Documents/GitHub/Conge/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/main/Documents/GitHub/Conge/public/index.php(59): CodeIgniter\Boot::bootWeb()
 #14 {main}
-CRITICAL - 2026-05-13 07:20:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+CRITICAL - 2026-05-13 06:44:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
 Main connection [SQLite3]: Class "SQLite3" not found
-[Method: GET, Route: demande]
+[Method: POST, Route: auth/attemptLogin]
 in SYSTEMPATH/Database/BaseConnection.php on line 606.
  1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
  2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
  3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
- 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
- 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
- 6 APPPATH/Models/Statut.php(11): CodeIgniter\BaseModel->findAll()
- 7 APPPATH/Controllers/DemandeController.php(9): App\Models\Statut->getAllStatuts()
- 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeController->index()
+ 4 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Models/Utilisateur.php(14): CodeIgniter\BaseModel->first()
+ 7 APPPATH/Controllers/UtilisateurController.php(27): App\Models\Utilisateur->logged_in()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UtilisateurController->login()
  9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
 11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
 12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
 13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
-CRITICAL - 2026-05-13 07:31:36 --> ErrorException: Undefined variable $departements
-[Method: GET, Route: demande]
-in APPPATH/Views/demande/index.php on line 19.
- 1 APPPATH/Views/demande/index.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(240): include('/home/pc/Documents/GitHub/Conge/app/Views/demande/index.php')
- 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
- 5 APPPATH/Controllers/DemandeController.php(19): view()
- 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeController->index()
+ERROR - 2026-05-13 06:45:03 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/main/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/main/Documents/GitHub/Conge/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/main/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/main/Documents/GitHub/Conge/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/main/Documents/GitHub/Conge/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/main/Documents/GitHub/Conge/system/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/main/Documents/GitHub/Conge/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /home/main/Documents/GitHub/Conge/app/Models/Utilisateur.php(14): CodeIgniter\BaseModel->first()
+#7 /home/main/Documents/GitHub/Conge/app/Controllers/UtilisateurController.php(27): App\Models\Utilisateur->logged_in()
+#8 /home/main/Documents/GitHub/Conge/system/CodeIgniter.php(951): App\Controllers\UtilisateurController->login()
+#9 /home/main/Documents/GitHub/Conge/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/main/Documents/GitHub/Conge/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/main/Documents/GitHub/Conge/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/main/Documents/GitHub/Conge/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/main/Documents/GitHub/Conge/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 {main}
+CRITICAL - 2026-05-13 06:45:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+[Method: POST, Route: auth/attemptLogin]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Models/Utilisateur.php(14): CodeIgniter\BaseModel->first()
+ 7 APPPATH/Controllers/UtilisateurController.php(27): App\Models\Utilisateur->logged_in()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UtilisateurController->login()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ERROR - 2026-05-13 06:45:44 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/main/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/main/Documents/GitHub/Conge/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/main/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/main/Documents/GitHub/Conge/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/main/Documents/GitHub/Conge/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/main/Documents/GitHub/Conge/system/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/main/Documents/GitHub/Conge/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /home/main/Documents/GitHub/Conge/app/Models/Utilisateur.php(14): CodeIgniter\BaseModel->first()
+#7 /home/main/Documents/GitHub/Conge/app/Controllers/UtilisateurController.php(27): App\Models\Utilisateur->logged_in()
+#8 /home/main/Documents/GitHub/Conge/system/CodeIgniter.php(951): App\Controllers\UtilisateurController->login()
+#9 /home/main/Documents/GitHub/Conge/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/main/Documents/GitHub/Conge/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/main/Documents/GitHub/Conge/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/main/Documents/GitHub/Conge/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/main/Documents/GitHub/Conge/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 {main}
+CRITICAL - 2026-05-13 06:45:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+[Method: POST, Route: auth/attemptLogin]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Models/Utilisateur.php(14): CodeIgniter\BaseModel->first()
+ 7 APPPATH/Controllers/UtilisateurController.php(27): App\Models\Utilisateur->logged_in()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UtilisateurController->login()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ERROR - 2026-05-13 06:46:42 --> Error connecting to the database: Error: Class "SQLite3" not found in /home/main/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/main/Documents/GitHub/Conge/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/main/Documents/GitHub/Conge/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/main/Documents/GitHub/Conge/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/main/Documents/GitHub/Conge/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/main/Documents/GitHub/Conge/system/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/main/Documents/GitHub/Conge/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /home/main/Documents/GitHub/Conge/app/Models/Utilisateur.php(14): CodeIgniter\BaseModel->first()
+#7 /home/main/Documents/GitHub/Conge/app/Controllers/UtilisateurController.php(27): App\Models\Utilisateur->logged_in()
+#8 /home/main/Documents/GitHub/Conge/system/CodeIgniter.php(951): App\Controllers\UtilisateurController->login()
+#9 /home/main/Documents/GitHub/Conge/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/main/Documents/GitHub/Conge/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/main/Documents/GitHub/Conge/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/main/Documents/GitHub/Conge/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/main/Documents/GitHub/Conge/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 {main}
+CRITICAL - 2026-05-13 06:46:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: Class "SQLite3" not found
+[Method: POST, Route: auth/attemptLogin]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Models/Utilisateur.php(14): CodeIgniter\BaseModel->first()
+ 7 APPPATH/Controllers/UtilisateurController.php(27): App\Models\Utilisateur->logged_in()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UtilisateurController->login()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ERROR - 2026-05-13 06:47:28 --> Unable to prepare statement: no such table: Utilisateur
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Models/Utilisateur.php(14): CodeIgniter\BaseModel->first()
+ 8 APPPATH/Controllers/UtilisateurController.php(27): App\Models\Utilisateur->logged_in()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UtilisateurController->login()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 06:47:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such table: Utilisateur
+[Method: POST, Route: auth/attemptLogin]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Models/Utilisateur.php(14): CodeIgniter\BaseModel->first()
+ 5 APPPATH/Controllers/UtilisateurController.php(27): App\Models\Utilisateur->logged_in()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UtilisateurController->login()
  7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
  9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
 11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
-CRITICAL - 2026-05-13 07:34:30 --> ErrorException: Trying to access array offset on null
-[Method: GET, Route: demande]
-in APPPATH/Views/demande/index.php on line 50.
- 1 APPPATH/Views/demande/index.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(240): include('/home/pc/Documents/GitHub/Conge/app/Views/demande/index.php')
- 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
- 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
- 5 APPPATH/Controllers/DemandeController.php(25): view()
- 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeController->index()
+CRITICAL - 2026-05-13 06:47:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such table: Utilisateur
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Models/Utilisateur.php(14): CodeIgniter\BaseModel->first()
+ 7 APPPATH/Controllers/UtilisateurController.php(27): App\Models\Utilisateur->logged_in()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UtilisateurController->login()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 06:47:28 --> [Caused by] SQLite3Exception: Unable to prepare statement: no such table: Utilisateur
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Models/Utilisateur.php(14): CodeIgniter\BaseModel->first()
+ 8 APPPATH/Controllers/UtilisateurController.php(27): App\Models\Utilisateur->logged_in()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UtilisateurController->login()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ERROR - 2026-05-13 06:47:29 --> Unable to prepare statement: no such table: Utilisateur
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Models/Utilisateur.php(14): CodeIgniter\BaseModel->first()
+ 8 APPPATH/Controllers/UtilisateurController.php(27): App\Models\Utilisateur->logged_in()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UtilisateurController->login()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 06:47:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such table: Utilisateur
+[Method: POST, Route: auth/attemptLogin]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Models/Utilisateur.php(14): CodeIgniter\BaseModel->first()
+ 5 APPPATH/Controllers/UtilisateurController.php(27): App\Models\Utilisateur->logged_in()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UtilisateurController->login()
  7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
  9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
 11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
-CRITICAL - 2026-05-13 07:34:31 --> ErrorException: Trying to access array offset on null
-[Method: GET, Route: demande]
-in APPPATH/Views/demande/index.php on line 50.
- 1 APPPATH/Views/demande/index.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(240): include('/home/pc/Documents/GitHub/Conge/app/Views/demande/index.php')
+CRITICAL - 2026-05-13 06:47:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: no such table: Utilisateur
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Models/Utilisateur.php(14): CodeIgniter\BaseModel->first()
+ 7 APPPATH/Controllers/UtilisateurController.php(27): App\Models\Utilisateur->logged_in()
+ 8 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UtilisateurController->login()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 06:47:29 --> [Caused by] SQLite3Exception: Unable to prepare statement: no such table: Utilisateur
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 164.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(164): SQLite3->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Models/Utilisateur.php(14): CodeIgniter\BaseModel->first()
+ 8 APPPATH/Controllers/UtilisateurController.php(27): App\Models\Utilisateur->logged_in()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UtilisateurController->login()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:34:16 --> ErrorException: Undefined variable $liste_type
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 49.
+ 1 APPPATH/Views/employe/demande.php(49): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
  3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
- 5 APPPATH/Controllers/DemandeController.php(25): view()
- 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeController->index()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
  7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
  9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
 11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
-CRITICAL - 2026-05-13 07:34:36 --> ErrorException: Trying to access array offset on null
-[Method: GET, Route: demande]
-in APPPATH/Views/demande/index.php on line 50.
- 1 APPPATH/Views/demande/index.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
- 2 SYSTEMPATH/View/View.php(240): include('/home/pc/Documents/GitHub/Conge/app/Views/demande/index.php')
+CRITICAL - 2026-05-13 07:34:17 --> ErrorException: Undefined variable $liste_type
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 49.
+ 1 APPPATH/Views/employe/demande.php(49): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
  3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
- 5 APPPATH/Controllers/DemandeController.php(25): view()
- 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeController->index()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
  7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
  9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
 11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:34:17 --> ErrorException: Undefined variable $liste_type
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 49.
+ 1 APPPATH/Views/employe/demande.php(49): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:34:17 --> ErrorException: Undefined variable $liste_type
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 49.
+ 1 APPPATH/Views/employe/demande.php(49): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:34:17 --> ErrorException: Undefined variable $liste_type
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 49.
+ 1 APPPATH/Views/employe/demande.php(49): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:34:18 --> ErrorException: Undefined variable $liste_type
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 49.
+ 1 APPPATH/Views/employe/demande.php(49): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:34:18 --> ErrorException: Undefined variable $liste_type
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 49.
+ 1 APPPATH/Views/employe/demande.php(49): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:34:24 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:34:25 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:34:25 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:34:25 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:34:56 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:34:56 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:34:56 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:34:56 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:34:57 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:34:57 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:34:59 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:35:00 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:35:00 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:35:00 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:35:00 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:35:00 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:35:00 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:35:00 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:35:00 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:35:00 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:35:00 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:35:00 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:35:00 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:35:00 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:35:35 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:35:37 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:35:40 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:35:54 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(30): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:37:36 --> Error: Call to a member function getSoldeRestant() on null
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Controllers/DemandeCongeController.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:37:37 --> Error: Call to a member function getSoldeRestant() on null
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Controllers/DemandeCongeController.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:37:37 --> Error: Call to a member function getSoldeRestant() on null
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Controllers/DemandeCongeController.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:37:38 --> Error: Call to a member function getSoldeRestant() on null
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Controllers/DemandeCongeController.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:37:38 --> Error: Call to a member function getSoldeRestant() on null
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Controllers/DemandeCongeController.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:37:38 --> Error: Call to a member function getSoldeRestant() on null
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Controllers/DemandeCongeController.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:37:38 --> Error: Call to a member function getSoldeRestant() on null
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Controllers/DemandeCongeController.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:37:38 --> Error: Call to a member function getSoldeRestant() on null
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Controllers/DemandeCongeController.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:37:47 --> Error: Call to a member function getSoldeRestant() on null
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Controllers/DemandeCongeController.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:38:22 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(37): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:38:22 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(37): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:38:22 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(37): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:39:16 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(37): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:39:28 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(37): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:40:04 --> ErrorException: Undefined array key "nom"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Views/employe/demande.php on line 50.
+ 1 APPPATH/Views/employe/demande.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/main/Documents/GitHub/Conge/app/Views/employe/demande.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/DemandeCongeController.php(37): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->go_to_crud()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:51:07 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "rh/dashboard.php"
+[Method: GET, Route: rh/dashboard]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/UtilisateurController.php(99): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UtilisateurController->rh_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:51:09 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "rh/dashboard.php"
+[Method: GET, Route: rh/dashboard]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/UtilisateurController.php(99): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UtilisateurController->rh_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:55:07 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Controllers/DemandeCongeController.php on line 37.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/Router/Router.php(792): class_exists()
+ 5 SYSTEMPATH/Router/Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH/CodeIgniter.php(829): CodeIgniter\Router\Router->handle()
+ 7 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:55:07 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Controllers/DemandeCongeController.php on line 37.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/Router/Router.php(792): class_exists()
+ 5 SYSTEMPATH/Router/Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH/CodeIgniter.php(829): CodeIgniter\Router\Router->handle()
+ 7 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:55:08 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Controllers/DemandeCongeController.php on line 37.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/Router/Router.php(792): class_exists()
+ 5 SYSTEMPATH/Router/Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH/CodeIgniter.php(829): CodeIgniter\Router\Router->handle()
+ 7 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:55:14 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Controllers/DemandeCongeController.php on line 37.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/Router/Router.php(792): class_exists()
+ 5 SYSTEMPATH/Router/Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH/CodeIgniter.php(829): CodeIgniter\Router\Router->handle()
+ 7 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:56:07 --> Error: Class "App\Controllers\DemandeConge" not found
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Controllers/DemandeCongeController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(921): App\Controllers\DemandeCongeController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:56:07 --> Error: Class "App\Controllers\DemandeConge" not found
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Controllers/DemandeCongeController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(921): App\Controllers\DemandeCongeController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:56:08 --> Error: Class "App\Controllers\DemandeConge" not found
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Controllers/DemandeCongeController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(921): App\Controllers\DemandeCongeController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:56:08 --> Error: Class "App\Controllers\DemandeConge" not found
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Controllers/DemandeCongeController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(921): App\Controllers\DemandeCongeController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:56:08 --> Error: Class "App\Controllers\DemandeConge" not found
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Controllers/DemandeCongeController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(921): App\Controllers\DemandeCongeController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:56:08 --> Error: Class "App\Controllers\DemandeConge" not found
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Controllers/DemandeCongeController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(921): App\Controllers\DemandeCongeController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:56:09 --> Error: Class "App\Controllers\DemandeConge" not found
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Controllers/DemandeCongeController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(921): App\Controllers\DemandeCongeController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:56:09 --> Error: Class "App\Controllers\DemandeConge" not found
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Controllers/DemandeCongeController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(921): App\Controllers\DemandeCongeController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:56:09 --> Error: Class "App\Controllers\DemandeConge" not found
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Controllers/DemandeCongeController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(921): App\Controllers\DemandeCongeController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:56:09 --> Error: Class "App\Controllers\DemandeConge" not found
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Controllers/DemandeCongeController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(921): App\Controllers\DemandeCongeController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:56:09 --> Error: Class "App\Controllers\DemandeConge" not found
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Controllers/DemandeCongeController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(921): App\Controllers\DemandeCongeController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 07:56:13 --> Error: Class "App\Controllers\DemandeConge" not found
+[Method: GET, Route: employe/addDemande]
+in APPPATH/Controllers/DemandeCongeController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(921): App\Controllers\DemandeCongeController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 08:13:18 --> ErrorException: Undefined array key "statut"
+[Method: GET, Route: employe/dashboard]
+in APPPATH/Controllers/UtilisateurController.php on line 92.
+ 1 APPPATH/Controllers/UtilisateurController.php(92): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 [internal function]: App\Controllers\UtilisateurController->App\Controllers\{closure}()
+ 3 APPPATH/Controllers/UtilisateurController.php(92): array_filter()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UtilisateurController->employe_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 08:13:18 --> ErrorException: Undefined array key "statut"
+[Method: GET, Route: employe/dashboard]
+in APPPATH/Controllers/UtilisateurController.php on line 92.
+ 1 APPPATH/Controllers/UtilisateurController.php(92): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 [internal function]: App\Controllers\UtilisateurController->App\Controllers\{closure}()
+ 3 APPPATH/Controllers/UtilisateurController.php(92): array_filter()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UtilisateurController->employe_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 08:13:18 --> ErrorException: Undefined array key "statut"
+[Method: GET, Route: employe/dashboard]
+in APPPATH/Controllers/UtilisateurController.php on line 92.
+ 1 APPPATH/Controllers/UtilisateurController.php(92): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 [internal function]: App\Controllers\UtilisateurController->App\Controllers\{closure}()
+ 3 APPPATH/Controllers/UtilisateurController.php(92): array_filter()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UtilisateurController->employe_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 08:13:18 --> ErrorException: Undefined array key "statut"
+[Method: GET, Route: employe/dashboard]
+in APPPATH/Controllers/UtilisateurController.php on line 92.
+ 1 APPPATH/Controllers/UtilisateurController.php(92): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 [internal function]: App\Controllers\UtilisateurController->App\Controllers\{closure}()
+ 3 APPPATH/Controllers/UtilisateurController.php(92): array_filter()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UtilisateurController->employe_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 08:13:23 --> ErrorException: Undefined array key "statut"
+[Method: GET, Route: employe/dashboard]
+in APPPATH/Controllers/UtilisateurController.php on line 92.
+ 1 APPPATH/Controllers/UtilisateurController.php(92): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 [internal function]: App\Controllers\UtilisateurController->App\Controllers\{closure}()
+ 3 APPPATH/Controllers/UtilisateurController.php(92): array_filter()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\UtilisateurController->employe_dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 08:19:59 --> ErrorException: Undefined property: App\Controllers\DemandeCongeController::$demandeConge
+[Method: POST, Route: employe/addDemande]
+in APPPATH/Controllers/DemandeCongeController.php on line 59.
+ 1 APPPATH/Controllers/DemandeCongeController.php(59): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->add_demande()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-05-13 08:20:01 --> ErrorException: Undefined property: App\Controllers\DemandeCongeController::$demandeConge
+[Method: POST, Route: employe/addDemande]
+in APPPATH/Controllers/DemandeCongeController.php on line 59.
+ 1 APPPATH/Controllers/DemandeCongeController.php(59): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\DemandeCongeController->add_demande()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
