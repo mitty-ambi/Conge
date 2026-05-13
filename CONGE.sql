@@ -3,9 +3,14 @@ CREATE TABLE Utilisateur(
     Nom VARCHAR(100),
     Prenom VARCHAR(100),
     Role VARCHAR(50),
+    id_departement INT,
     CHECK (Role IN ('responsable rh', 'employé', 'admin'))
 );
 
+CREATE TABLE Departement (
+    id_departement INTEGER PRIMARY KEY AUTOINCREMENT,
+    nom VARCHAR(10)
+);
 CREATE TABLE Type(
     id_type INTEGER PRIMARY KEY AUTOINCREMENT,
     nom VARCHAR(50)
@@ -37,4 +42,10 @@ CREATE TABLE DemandeStatus(
     id_demande INTEGER,
     id_status INTEGER,
     date DATE
+);
+
+CREATE TABLE DemandeDecision(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id_demande INTEGER,
+    id_user INTEGER
 );
