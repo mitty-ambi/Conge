@@ -90,6 +90,11 @@
 
         public function index()
         {
+            $role = session()->get('role');
+            if ($role !== 'responsable rh') {
+                return redirect()->to($role === 'admin' ? '/admin/dashboard' : '/employe/dashboard');
+            }
+
             $departementModel = new Departement();
             $data['departements'] = $departementModel->getAllDepartements();
 
@@ -102,6 +107,11 @@
         }
         public function getByStatut($id_statut)
         {
+            $role = session()->get('role');
+            if ($role !== 'responsable rh') {
+                return redirect()->to($role === 'admin' ? '/admin/dashboard' : '/employe/dashboard');
+            }
+
             $departementModel = new Departement();
             $data['departements'] = $departementModel->getAllDepartements();
 
@@ -125,6 +135,12 @@
         }
         public function getByDepartement($id_departement)
         {
+            // Accès réservé au responsable RH
+            $role = session()->get('role');
+            if ($role !== 'responsable rh') {
+                return redirect()->to($role === 'admin' ? '/admin/dashboard' : '/employe/dashboard');
+            }
+
             $departementModel = new Departement();
             $data['departements'] = $departementModel->getAllDepartements();
             $statutModel = new Statut();
@@ -146,6 +162,11 @@
         }
         public function accepterDemande($id_demande)
         {
+            $role = session()->get('role');
+            if ($role !== 'responsable rh') {
+                return redirect()->to($role === 'admin' ? '/admin/dashboard' : '/employe/dashboard');
+            }
+
             $demandeModel = new DemandeModel();
             $demande = $demandeModel->find((int) $id_demande);
             if (!is_array($demande)) {
@@ -173,6 +194,12 @@
             return redirect()->to('/demande');
         }
         public function refuserDemande($id_demande){
+            // Accès réservé au responsable RH
+            $role = session()->get('role');
+            if ($role !== 'responsable rh') {
+                return redirect()->to($role === 'admin' ? '/admin/dashboard' : '/employe/dashboard');
+            }
+
             $demandeModel = new DemandeModel();
             $demandeModel->modifyStatut($id_demande, 3);
             return redirect()->to('/demande');
