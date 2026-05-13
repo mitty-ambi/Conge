@@ -5,4 +5,4 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/login', 'UtilisateurController::login');
+$routes->get('/login', 'UtilisateurController::go_to_login');
