@@ -13,7 +13,6 @@ class DemandeModel extends Model
     }
     public function getDemandeByStatut($id_statut)
     {
-        // DemandeStatus est une table d'historique: on filtre sur le dernier statut par demande.
         $sql = "SELECT dc.*
                 FROM DemandeConge dc
                 JOIN DemandeStatus ds ON ds.id_demande = dc.id_demande
