@@ -27,3 +27,14 @@ CREATE TABLE DemandeConge(
     FOREIGN KEY (id_user) REFERENCES Utilisateur(id_user),
     FOREIGN KEY (id_type) REFERENCES Type(id_type)
 );
+CREATE TABLE Status(
+    id_status INTEGER PRIMARY KEY AUTOINCREMENT,
+    nom VARCHAR(50)
+);  
+
+CREATE TABLE DemandeStatus(
+    id_demande_status INTEGER PRIMARY KEY AUTOINCREMENT,
+    id_demande INTEGER,
+    id_status INTEGER,
+    date DATE
+);
