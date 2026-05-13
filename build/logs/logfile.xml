@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="/home/think/Musique/WEB/Templates-et-doc/conges-ci4/phpunit.xml.dist" tests="5" assertions="7" errors="0" failures="0" skipped="0" time="0.062796">
+    <testsuite name="App" tests="5" assertions="7" errors="0" failures="0" skipped="0" time="0.062796">
+      <testsuite name="ExampleDatabaseTest" file="/home/think/Musique/WEB/Templates-et-doc/conges-ci4/tests/database/ExampleDatabaseTest.php" tests="2" assertions="3" errors="0" failures="0" skipped="0" time="0.050937">
+        <testcase name="testModelFindAll" file="/home/think/Musique/WEB/Templates-et-doc/conges-ci4/tests/database/ExampleDatabaseTest.php" line="17" class="ExampleDatabaseTest" classname="ExampleDatabaseTest" assertions="1" time="0.044230"/>
+        <testcase name="testSoftDeleteLeavesRow" file="/home/think/Musique/WEB/Templates-et-doc/conges-ci4/tests/database/ExampleDatabaseTest.php" line="28" class="ExampleDatabaseTest" classname="ExampleDatabaseTest" assertions="2" time="0.006707"/>
+      </testsuite>
+      <testsuite name="ExampleSessionTest" file="/home/think/Musique/WEB/Templates-et-doc/conges-ci4/tests/session/ExampleSessionTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.001349">
+        <testcase name="testSessionSimple" file="/home/think/Musique/WEB/Templates-et-doc/conges-ci4/tests/session/ExampleSessionTest.php" line="10" class="ExampleSessionTest" classname="ExampleSessionTest" assertions="1" time="0.001349"/>
+      </testsuite>
+      <testsuite name="HealthTest" file="/home/think/Musique/WEB/Templates-et-doc/conges-ci4/tests/unit/HealthTest.php" tests="2" assertions="3" errors="0" failures="0" skipped="0" time="0.010510">
+        <testcase name="testIsDefinedAppPath" file="/home/think/Musique/WEB/Templates-et-doc/conges-ci4/tests/unit/HealthTest.php" line="12" class="HealthTest" classname="HealthTest" assertions="1" time="0.001509"/>
+        <testcase name="testBaseUrlHasBeenSet" file="/home/think/Musique/WEB/Templates-et-doc/conges-ci4/tests/unit/HealthTest.php" line="17" class="HealthTest" classname="HealthTest" assertions="2" time="0.009001"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

@@ -1,25 +1,27 @@
 <?php
-    namespace App\Models;
-    use CodeIgniter\Model;
-    class SoldeModel extends Model{
-        protected $table = 'Solde';
-        protected $primaryKey = 'id_solde';
-        protected $allowedFields = ['valeur', 'id_user', 'id_type'];
-        protected $useTimestamps = false;
 
-        public function getSoldeByUserIdByType($id_user, $id_type)
-        {
-            return $this->where('id_user', $id_user)->where('id_type', $id_type)->first();
-        }
-        public function updateSolde($id_user, $id_type, $valeur)
-        {
-            $solde = $this->getSoldeByUserIdByType($id_user, $id_type);
-            if ($solde) {
-                $newValeur = $solde['valeur'] + $valeur;
-                return $this->update($solde['id_solde'], ['valeur' => $newValeur]);
-            } else {
-                return $this->insert(['id_user' => $id_user, 'id_type' => $id_type, 'valeur' => $valeur]);
-            }
-        }
-    }
-?>
+namespace App\Models;
+
+use CodeIgniter\Model;
+
+class SoldeModel extends Model
+{
+    protected $table = 'soldes';
+    protected $primaryKey = 'id';
+    protected $returnType = 'array';
+    protected $allowedFields = [
+        'employe_id',
+        'type_conge_id',
+        'annee',
+        'jours_attribues',
+        'jours_pris',
+    ];
+
+    protected $validationRules = [
+        'employe_id' => 'required|integer',
+        'type_conge_id' => 'required|integer',
+        'annee' => 'required|integer',
+        'jours_attribues' => 'required|integer|greater_than_equal_to[0]',
+        'jours_pris' => 'permit_empty|integer|greater_than_equal_to[0]',
+    ];
+}
